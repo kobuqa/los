@@ -10,7 +10,6 @@ const StyledBox = styled(Box)(({theme}) => ({
 	gridTemplateRows: '2fr 2fr 2fr',
 	gridColumnGap: '1vw',
 	gridRowGap: '1vw',
-
 }))
 
 const SlaveList = () => {
@@ -18,7 +17,7 @@ const SlaveList = () => {
 	const specialists = useAppSelector(selectSpecialists)
 	useEffect(() => {
 		dispatch(getSpecialists());
-	}, [])
+	}, [dispatch])
 
 	return (
 		<StyledBox>
