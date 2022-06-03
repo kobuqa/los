@@ -5,16 +5,12 @@ import {
 	InputLabel,
 	MenuItem,
 	Select,
-	Stack,
 	TextField,
-	Typography
 } from "@mui/material";
 import {useFieldArray, useForm} from "react-hook-form";
-import {LocationDto} from "../../../shared/api/rest/locations/location.dto";
-import {postLocations} from "../../../shared/api/rest/locations/postLocations";
 import {SpecializationDto} from "../../../shared/api/rest/specializations/specialization.dto";
-import {postSpecializations} from "../../../shared/api/rest/specializations/postSpecializations";
 import {Specialization} from "../../../shared/libs/types/specialization.enum";
+import {postSpecializations} from "../../../shared/api/rest/specializations/postSpecializations";
 
 const SpecializationsForm = () => {
 
@@ -35,7 +31,7 @@ const SpecializationsForm = () => {
 	const {fields, append, remove} = useFieldArray({control, name: "specializations"});
 
 	return (
-		<form onSubmit={handleSubmit(({specializations}) => console.log(specializations))}>
+		<form onSubmit={handleSubmit(({specializations}) => postSpecializations(specializations))}>
 			<ul>
 				{fields.map((item, index) => (
 					<li key={item.id}>

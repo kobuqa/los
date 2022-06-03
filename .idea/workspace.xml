@@ -2,36 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0253056f-806a-4f4c-a013-99558ed22899" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/normalize.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/admin/forms/locations-form.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/admin/forms/skills-form.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/admin/forms/specializations-form.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/admin/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reset.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/api/instance.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/api/rest/locations/getLocations.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/api/rest/locations/location.dto.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/api/rest/locations/postLocations.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/api/rest/skills/getSkills.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/api/rest/skills/postSkills.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/api/rest/skills/skill.dto.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/api/rest/specializations/getSpecializations.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/api/rest/specializations/postSpecializations.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/api/rest/specializations/specialization.dto.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/libs/types/specialization.enum.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/a/5ab44fe33ca96299f51ad4778a73e425b92bf439" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/9/69c0c0374da932711e610537cb5fd146228cbc37" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/2/d2d3bb60cab7e8c869b5fdf0a820b7edf2fc7859" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/5/45abc82181390bdfa44768577b0f61021bf9bd45" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/7/47fdda6c6687b6494b6f4100fd179ba46f77a386" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/specialist/api/getSpecialists.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/specialist/api/getSpecialists.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/entities/specialist/ui/specialist-card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/specialist/ui/specialist-card.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/specialist/colorized-frame/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/specialist/colorized-frame/styles.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/admin/forms/locations-form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/admin/forms/locations-form.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/admin/forms/skills-form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/admin/forms/skills-form.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/admin/forms/specializations-form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/admin/forms/specializations-form.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +82,7 @@
       <workItem from="1654176854077" duration="7312000" />
       <workItem from="1654184301934" duration="176000" />
       <workItem from="1654185244659" duration="4770000" />
-      <workItem from="1654242941026" duration="8366000" />
+      <workItem from="1654242941026" duration="8663000" />
     </task>
     <servers />
   </component>

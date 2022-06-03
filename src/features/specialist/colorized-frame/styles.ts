@@ -1,4 +1,4 @@
-import {Card, CardProps, dividerClasses, styled} from "@mui/material";
+import {Card, CardProps, styled} from "@mui/material";
 import {SpecialistLevel} from "../../../shared/libs/types/SpecialistLevel.enum";
 import {framePicker} from "../../../shared/libs/utils/framePicker";
 

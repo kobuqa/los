@@ -26,10 +26,6 @@ $src/shared/libs/utils/framePicker.ts,f/0/f082d9a247c5451fb7d4b80828352837fd297
 V
 &src/entities/specialist/model/slice.ts,5/2/521f92bfdadf75f32bc5ce3e9f4dbbd1abf687bc
 a
-1src/features/specialist/colorized-frame/styles.ts,4/7/47fdda6c6687b6494b6f4100fd179ba46f77a386
-a
 1src/features/specialist/colorized-frame/index.tsx,3/4/345d0f4b38fc14a856ffbe3318db6e789bb11e12
 F
 src/react-app-env.d.ts,4/a/4a7b99bdbee5792679d347b6474463bf5e14b66d
-^
-.src/entities/specialist/ui/specialist-card.tsx,4/5/45abc82181390bdfa44768577b0f61021bf9bd45

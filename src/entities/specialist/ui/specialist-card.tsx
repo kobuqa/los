@@ -22,7 +22,7 @@ const SpecialistCard = ({id, firstName, level}: User) => {
 
 	return (
 		<ColorizedFrame level={level}>
-			<Box>
+			<Box onClick={handleNavigate}>
 				<CardHeader title={firstName}/>
 				<CardMedia
 					component="img"
