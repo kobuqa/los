@@ -14,3 +14,11 @@ export const ColorizedCard = styled(Card)<StyledCardProps>(({level}) => ({
 		transform: 'scale(1.05)',
 	}
 }))
+
+
+
+
+
+
+
+

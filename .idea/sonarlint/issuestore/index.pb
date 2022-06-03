@@ -13,16 +13,10 @@ K
 src/app/providers/index.tsx,4/d/4dd76c86ec1baac1b014f7053ff786f28df7cdc7
 P
  src/app/providers/withRouter.tsx,0/0/00137c78f94109ea002685b40a4b8f8d45ff6821
-=
-src/index.tsx,5/a/5ab44fe33ca96299f51ad4778a73e425b92bf439
 @
 src/app/store.ts,3/c/3c1a6bc04b0c8d3c887cd17f53a0eb9902fe40ca
 V
 &src/pages/specialist-details/index.tsx,a/e/ae0e09c95aefdf2d6bd5185a26682d0aa6632d9b
-C
-src/pages/index.tsx,d/2/d2d3bb60cab7e8c869b5fdf0a820b7edf2fc7859
-]
--src/entities/specialist/api/getSpecialists.ts,6/9/69c0c0374da932711e610537cb5fd146228cbc37
 R
 "src/shared/libs/types/User.type.ts,a/f/afd3d42541d5f3bbe06c3ac654cc0ef3368a1f35
 ]
@@ -33,3 +27,5 @@ V
 &src/entities/specialist/model/slice.ts,5/2/521f92bfdadf75f32bc5ce3e9f4dbbd1abf687bc
 a
 1src/features/specialist/colorized-frame/index.tsx,3/4/345d0f4b38fc14a856ffbe3318db6e789bb11e12
+F
+src/react-app-env.d.ts,4/a/4a7b99bdbee5792679d347b6474463bf5e14b66d

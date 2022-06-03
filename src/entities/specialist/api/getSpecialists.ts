@@ -1,4 +1,4 @@
-import axios from "axios";
 import {User} from "../../../shared/libs/types/User.type";
+import {api} from "../../../shared/api/instance";
 
-export const fetchSpecialists = () =>  axios.get<User[]>('http://vk.com')
+export const fetchSpecialists = () =>  api.get<User[]>('/specialists')
