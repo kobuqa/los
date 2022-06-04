@@ -1,8 +1,8 @@
 export enum SpecialistLevel {
-	JUNIOR,
-	MIDDLE,
-	SENIOR,
-	TEAM_LEAD,
-	TECH_LEAD,
-	ARCHITECT
+	Junior = 'JUNIOR',
+	Middle = 'MIDDLE',
+	Senior = 'SENIOR',
+	Teamlead = 'TEAM_LEAD',
+	Techlead = 'TECH_LEAD',
+	Architect = 'ARCHITECT'
 }

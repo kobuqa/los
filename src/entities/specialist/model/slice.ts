@@ -1,8 +1,9 @@
 import {createAsyncThunk, createSelector, createSlice} from '@reduxjs/toolkit';
 import {RootState} from "../../../app/store";
-import {fetchSpecialists} from "../api/getSpecialists";
 import {User} from "../../../shared/libs/types/User.type";
-import {SpecialistLevel} from "../../../shared/libs/types/SpecialistLevel.enum";
+import {
+	getSpecialists as getSpecialistsRequest,
+} from "../../../shared/api/rest/specialists/getSpecialists";
 
 export interface SpecialistState {
 	users: User[];
@@ -10,19 +11,7 @@ export interface SpecialistState {
 }
 
 const initialState: SpecialistState = {
-	users: [
-		{id: 0, firstName: 'Alex', level: SpecialistLevel.MIDDLE},
-		{id: 1, firstName: 'Vlad', level: SpecialistLevel.JUNIOR},
-		{id: 2, firstName: 'Galya', level: SpecialistLevel.SENIOR},
-		{id: 3, firstName: 'Petya', level: SpecialistLevel.JUNIOR},
-		{id: 4, firstName: 'Vasya', level: SpecialistLevel.JUNIOR},
-		{id: 5, firstName: 'Kolya', level: SpecialistLevel.ARCHITECT},
-		{id: 6, firstName: 'Dima', level: SpecialistLevel.JUNIOR},
-		{id: 7, firstName: 'Venya', level: SpecialistLevel.TEAM_LEAD},
-		{id: 8, firstName: 'Fedya', level: SpecialistLevel.JUNIOR},
-		{id: 9, firstName: 'Andrey', level: SpecialistLevel.TECH_LEAD},
-		{id: 10, firstName: 'Gleb', level: SpecialistLevel.JUNIOR},
-	],
+	users: [],
 	status: 'idle',
 };
 
@@ -35,7 +24,7 @@ const initialState: SpecialistState = {
 export const getSpecialists = createAsyncThunk(
 	'specialist/getSpecialists',
 	async () => {
-		const response = await fetchSpecialists();
+		const response = await getSpecialistsRequest();
 		// The value we return becomes the `fulfilled` action payload
 		return response.data;
 	}

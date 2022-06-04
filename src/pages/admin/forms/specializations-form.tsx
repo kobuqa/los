@@ -11,44 +11,54 @@ import {useFieldArray, useForm} from "react-hook-form";
 import {SpecializationDto} from "../../../shared/api/rest/specializations/specialization.dto";
 import {Specialization} from "../../../shared/libs/types/specialization.enum";
 import {postSpecializations} from "../../../shared/api/rest/specializations/postSpecializations";
+import {useFormFetch} from "../../../shared/libs/hooks/useFormFetch";
+import FetchButton from "../../../shared/ui/components/fetch-button";
 
 const SpecializationsForm = () => {
+	const formDefaultValue = {
+		specializations: [{
+			name: "",
+			domain: Specialization.FullStack
+		}]
+	}
 
 	const {
 		control,
 		register,
+		reset,
 		handleSubmit,
 		formState: {errors}
 	} = useForm<{ specializations: SpecializationDto[] }>({
-		defaultValues: {
-			specializations: [{
-				name: "",
-				domain: Specialization.FullStack
-			}]
-		}
+		defaultValues: formDefaultValue
 	});
 
 	const {fields, append, remove} = useFieldArray({control, name: "specializations"});
+	const {formFetchStatus, formSubmitFn} = useFormFetch({
+		formFetchFn: postSpecializations,
+		formClearFn: () => reset(formDefaultValue)
+	});
 
 	return (
-		<form onSubmit={handleSubmit(({specializations}) => postSpecializations(specializations))}>
+		<form onSubmit={handleSubmit(({specializations}) => formSubmitFn(specializations))}
+		      style={{display: 'flex', flexDirection: 'column', rowGap: 10}}>
 			<ul>
 				{fields.map((item, index) => (
-					<li key={item.id}>
+					<li key={item.id}
+					    style={{display: 'flex', flexDirection: 'column', rowGap: 10, marginBottom: 24}}>
 						<TextField
 							fullWidth
-							label={'Specialization Name'}
+							label={'Name'}
 							error={errors.specializations ? !!errors.specializations[index]?.name : false}
 							helperText={errors.specializations ? !!errors.specializations[index]?.name?.message : false}
 							{...register(`specializations.${index}.name` as const, {required: true})}
 						/>
 						<FormControl fullWidth>
-							<InputLabel>Specialization Domain</InputLabel>
+							<InputLabel>Domain</InputLabel>
 							<Select
-								label="Specialization Domain"
+								label="Domain"
 								error={errors.specializations ? !!errors.specializations[index]?.domain : false}
 								{...register(`specializations.${index}.domain` as const, {required: true})}
-								defaultValue={Specialization.FullStack}
+								defaultValue=""
 							>
 								{(Object.keys(Specialization) as (keyof typeof Specialization)[]).map((key) => {
 									return (
@@ -66,9 +76,9 @@ const SpecializationsForm = () => {
 						<Button
 							variant="outlined"
 							type="button"
+							color="error"
 							disabled={fields.length < 2}
-							onClick={() => remove(index)}
-						>
+							onClick={() => remove(index)}>
 							Remove
 						</Button>
 					</li>
@@ -82,9 +92,15 @@ const SpecializationsForm = () => {
 					domain: Specialization.FullStack
 				})}
 			>
-				Add More Skills
+				Add Specialization
 			</Button>
-			<Button variant="contained" type="submit">Create Specializations</Button>
+			<FetchButton
+				variant="contained"
+				type="submit"
+				status={formFetchStatus}
+			>
+				Save Specializations
+			</FetchButton>
 		</form>
 	);
 };
