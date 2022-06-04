@@ -11,7 +11,7 @@ const SlaveDetail = () => {
 	return (
 		<Card>
 			<Button onClick={handleBack}>Go back</Button>
-			{user.firstName} Details
+			{user.id} Details
 		</Card>
 	);
 };

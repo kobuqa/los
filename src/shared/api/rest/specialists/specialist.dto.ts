@@ -1,7 +1,4 @@
-
-
-export type User = {
-	id: number;
+export type SpecialistDto = {
 	image: string;
 	name: string;
 	specializationId: number;
