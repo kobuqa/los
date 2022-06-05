@@ -29,3 +29,14 @@ a
 1src/features/specialist/colorized-frame/index.tsx,3/4/345d0f4b38fc14a856ffbe3318db6e789bb11e12
 F
 src/react-app-env.d.ts,4/a/4a7b99bdbee5792679d347b6474463bf5e14b66d
+a
+1src/features/specialist/colorized-frame/styles.ts,4/7/47fdda6c6687b6494b6f4100fd179ba46f77a386
+:
+
+.gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
+S
+#src/pages/specialist-list/index.tsx,c/8/c81add7f1ccaac0888e6b47a28fba287aea67e56
+U
+%src/pages/admin/forms/skills-form.tsx,0/9/09150f2c6110c33d0f36d8d9134df7dff97cb44e
+X
+(src/pages/admin/forms/locations-form.tsx,6/4/64fdc12d7ad3ab656a4c58874feabda024070b36

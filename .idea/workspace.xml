@@ -2,13 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0253056f-806a-4f4c-a013-99558ed22899" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pages/admin/forms/specialists-form-old.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/admin/forms/specialists/specialist-field-array.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/admin/forms/specialists/specialist-nested-field-array.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/admin/forms/specialists/specialists-form.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/admin/forms/specialist-field-array-old-2.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/admin/forms/specialist-nested-field-array-old-2.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/admin/forms/specialist/forms/general-form.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/admin/forms/specialist/forms/projects-form.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/admin/forms/specialist/specialist-form-stepper.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/admin/forms/specialist/specialist-form.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/admin/forms/specialists-form.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/admin/forms/specialists/specialist-field-array.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/admin/forms/specialists/specialist-nested-field-array.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/admin/forms/specialists/specialists-form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/admin/forms/specialists-form-old-2.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/admin/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/admin/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/specialist-details/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/specialist-details/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/ui/components/fetch-autocomplete.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/components/fetch-autocomplete.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,11 +70,11 @@
       <recent name="$PROJECT_DIR$/src/shared/api/rest/skills" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/pages/admin/forms" />
       <recent name="$PROJECT_DIR$/src/shared/api/rest/locations" />
       <recent name="$PROJECT_DIR$/src/shared/libs" />
       <recent name="$PROJECT_DIR$/src/entities/specialist/model" />
       <recent name="$PROJECT_DIR$/src/entities" />
-      <recent name="$PROJECT_DIR$/src/app" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -81,7 +90,10 @@
       <workItem from="1654184301934" duration="176000" />
       <workItem from="1654185244659" duration="4770000" />
       <workItem from="1654242941026" duration="8663000" />
-      <workItem from="1654417113562" duration="4584000" />
+      <workItem from="1654417113562" duration="4775000" />
+      <workItem from="1654421915161" duration="12000" />
+      <workItem from="1654431361687" duration="5970000" />
+      <workItem from="1654438611513" duration="9133000" />
     </task>
     <servers />
   </component>

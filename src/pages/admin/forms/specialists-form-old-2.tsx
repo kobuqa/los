@@ -1,13 +1,16 @@
 import {FormProvider, useForm} from "react-hook-form";
-import SpecialistFieldArray from "./specialist-field-array";
+import SpecialistFieldArray from "./specialist-field-array-old-2";
 import {Button} from "@mui/material";
-
-const SpecialistsForm = () => {
+const SpecialistsFormOld2 = () => {
 	const defaultValues = {
 		specialists: [
 			{
-				name: "Specialist Name",
-				projects: [{ title: "Project A" }]
+				name: "",
+				image: "",
+				about: "",
+				level: "",
+				skillIds: [],
+				projects: [{ title: "", description: "", role: "", techStack: "", language: "", team: "", startDate: null, endDate: null }]
 			}
 		]
 	};
@@ -26,7 +29,8 @@ const SpecialistsForm = () => {
 				<Button variant="contained" type="submit" disabled={!formState.isValid} >Submit</Button>
 			</form>
 		</FormProvider>
+
 	);
 };
 
-export default SpecialistsForm;
+export default SpecialistsFormOld2;

@@ -66,69 +66,73 @@ const FetchAutocomplete = forwardRef<HTMLInputElement, FetchAutocompleteProps>(
 				control={control}
 				name={name}
 				render={
-					({field: {onChange}}) => (
-						<Autocomplete
-							fullWidth
-							filterSelectedOptions
-							multiple={multiple}
-							limitTags={2}
-							open={open}
-							value={value}
-							onOpen={() => setOpen(true)}
-							onClose={() => setOpen(false)}
-							isOptionEqualToValue={(option, value) => option.id === value.id}
-							getOptionLabel={getOptionLabelFn}
-							options={options}
-							loading={loading}
-							onChange={(_, value) => {
-								if (multiple) {
-									const createdItem = value.find((item: { [key: string]: unknown }) => !item[extractedProp])
-									if (!createdItem) {
-										setValue(() => value);
-										return onChange(handleAddValues(value));
+					({field, formState: {errors}}) => {
+						return (
+
+							<Autocomplete
+								fullWidth
+								filterSelectedOptions
+								multiple={multiple}
+								limitTags={2}
+								open={open}
+								value={value}
+								onOpen={() => setOpen(true)}
+								onClose={() => setOpen(false)}
+								isOptionEqualToValue={(option, value) => option.id === value.id}
+								getOptionLabel={getOptionLabelFn}
+								options={options}
+								loading={loading}
+								onChange={(_, value) => {
+									if (multiple) {
+										const createdItem = value.find((item: { [key: string]: unknown }) => !item[extractedProp])
+										if (!createdItem) {
+											setValue(() => value);
+											return field.onChange(handleAddValues(value));
+										}
+										return createFn && (async () => {
+											setIsFetching(true);
+											const result = await createFn([{name: inputValue}])
+											setIsFetching(false);
+											field.onChange(handleAddValues([...value.slice(0, -1), ...result.data]));
+											setValue((prev: any) => ([...prev, ...result.data]))
+										})()
 									}
-									return createFn && (async () => {
-										setIsFetching(true);
-										const result = await createFn([{name: inputValue}])
-										setIsFetching(false);
-										onChange(handleAddValues([...value.slice(0, -1), ...result.data]));
-										setValue((prev: any) => ([...prev, ...result.data]))
-									})()
-								}
-								setValue(() => value);
-								onChange(handleAddValues(value));
-							}}
-							filterOptions={(options, params) => {
-								const filtered = filter(options, params);
-								const {inputValue} = params;
-								const isExisting = options.some((option) => option.name.toLowerCase() === inputValue.toLowerCase());
-								if (inputValue !== '' && !isExisting && createFn) filtered.push({name: `Add: ${inputValue}`});
-								return filtered;
-							}}
-							selectOnFocus
-							clearOnBlur
-							handleHomeEndKeys
-							renderInput={(params) => (
-								<TextField
-									{...params}
-									ref={ref}
-									label={label}
-									InputProps={{
-										...params.InputProps,
-										endAdornment: (
-											<>
-												{loading || isFetching ?
-													<CircularProgress color="inherit" size={20}/> : null}
-												{params.InputProps.endAdornment}
-											</>
-										),
-									}}
-									value={inputValue}
-									onChange={(event) => setInputValue(event.target.value)}
-								/>
-							)}
-						/>
-					)
+									setValue(() => value);
+									field.onChange(handleAddValues(value));
+								}}
+								filterOptions={(options, params) => {
+									const filtered = filter(options, params);
+									const {inputValue} = params;
+									const isExisting = options.some((option) => option.name.toLowerCase() === inputValue.toLowerCase());
+									if (inputValue !== '' && !isExisting && createFn) filtered.push({name: `Add: ${inputValue}`});
+									return filtered;
+								}}
+								selectOnFocus
+								clearOnBlur
+								handleHomeEndKeys
+								renderInput={(params) => (
+									<TextField
+										{...params}
+										ref={ref}
+										label={label}
+										InputProps={{
+											...params.InputProps,
+											endAdornment: (
+												<>
+													{loading || isFetching ?
+														<CircularProgress color="inherit" size={20}/> : null}
+													{params.InputProps.endAdornment}
+												</>
+											),
+										}}
+										value={inputValue}
+										onChange={(event) => setInputValue(event.target.value)}
+										error={!!errors[name]}
+									/>
+								)}
+							/>
+						)
+					}
 				}
 
 			/>
