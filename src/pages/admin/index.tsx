@@ -4,7 +4,7 @@ import LocationsForm from "./forms/locations-form";
 import SpecializationsForm from "./forms/specializations-form";
 import {SyntheticEvent, useState } from "react";
 import TabPanel from "../../shared/ui/components/tab-panel";
-import SpecialistsForm from "./forms/specialists-form";
+import SpecialistsForm from "./forms/specialists/specialists-form";
 
 const AdminPage = () => {
 	const [activeTab, setActiveTab] = useState(0);

@@ -2,34 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0253056f-806a-4f4c-a013-99558ed22899" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pages/admin/forms/specialists-form.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/api/rest/specialists/getSpecialists.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/api/rest/specialists/postSpecialists.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/api/rest/specialists/specialist.dto.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/libs/helpers/mappers.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/libs/hooks/useFormFetch.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/libs/types/Availability.enum.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/libs/types/Education.enum.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/libs/types/EnglishLevel.enum.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/libs/types/form-submit-status.enum.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/components/fetch-autocomplete.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/components/fetch-button.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/components/tab-panel.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/specialist/api/getSpecialists.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/specialist/model/slice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/specialist/model/slice.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/specialist/ui/specialist-card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/specialist/ui/specialist-card.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/specialist/colorized-frame/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/specialist/colorized-frame/styles.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/admin/forms/locations-form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/admin/forms/locations-form.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/admin/forms/skills-form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/admin/forms/skills-form.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/admin/forms/specializations-form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/admin/forms/specializations-form.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/admin/forms/specialists-form-old.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/admin/forms/specialists/specialist-field-array.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/admin/forms/specialists/specialist-nested-field-array.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/admin/forms/specialists/specialists-form.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/admin/forms/specialists-form.tsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/admin/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/admin/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/specialist-details/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/specialist-details/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/specialist-list/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/specialist-list/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/libs/types/SpecialistLevel.enum.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/libs/types/SpecialistLevel.enum.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/libs/types/User.type.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/libs/types/User.type.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +52,7 @@
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -102,6 +81,7 @@
       <workItem from="1654184301934" duration="176000" />
       <workItem from="1654185244659" duration="4770000" />
       <workItem from="1654242941026" duration="8663000" />
+      <workItem from="1654417113562" duration="4584000" />
     </task>
     <servers />
   </component>
