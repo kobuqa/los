@@ -1,5 +1,5 @@
-import React, {useEffect} from "react";
-import {Controller, useFormContext} from "react-hook-form";
+import React from "react";
+import { useFormContext} from "react-hook-form";
 import {Box, FormControl, FormHelperText, InputLabel, MenuItem, Select, TextField} from "@mui/material";
 import FetchAutocomplete from "../../../../../shared/ui/components/fetch-autocomplete";
 import {getSpecializations} from "../../../../../shared/api/rest/specializations/getSpecializations";

@@ -29,9 +29,10 @@ const SpecialistForm = () => {
 		formClearFn: () => reset(defaultValues)
 	});
 
+	const formValue = watch()
 	useEffect(() => {
-		console.log(watch());
-	}, [watch()])
+		console.log(formValue);
+	}, [formValue])
 
 	return (
 		<FormProvider {...methods}>
