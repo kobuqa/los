@@ -4,8 +4,7 @@
     <list default="true" id="0253056f-806a-4f4c-a013-99558ed22899" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/admin/forms/specialist/forms/general-form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/admin/forms/specialist/forms/general-form.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/admin/forms/specialist/specialist-form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/admin/forms/specialist/specialist-form.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/admin/forms/specialist/forms/projects-form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/admin/forms/specialist/forms/projects-form.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +81,9 @@
       <workItem from="1654421915161" duration="12000" />
       <workItem from="1654431361687" duration="5970000" />
       <workItem from="1654438611513" duration="9156000" />
-      <workItem from="1654447924231" duration="86000" />
+      <workItem from="1654447924231" duration="264000" />
+      <workItem from="1654451145646" duration="140000" />
+      <workItem from="1654455021326" duration="63000" />
     </task>
     <servers />
   </component>

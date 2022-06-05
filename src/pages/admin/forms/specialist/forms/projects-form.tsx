@@ -26,42 +26,42 @@ export const ProjectsForm = () => {
 									label="Title"
 									{...register(`projects[${idx}].title` as const, {required: true})}
 									error={errors ? !!errors.projects?.[idx]?.title : false}
-									helperText={errors ? !!errors.projects?.[idx]?.title.message : false}
+									helperText={errors ? !!errors.projects?.[idx]?.title?.message : false}
 								/>
 								<TextField
 									variant="outlined"
 									label="Description"
 									{...register(`projects[${idx}].description` as const, {required: true})}
 									error={errors ? !!errors.projects?.[idx]?.description : false}
-									helperText={errors ? !!errors.projects?.[idx]?.description.message : false}
+									helperText={errors ? !!errors.projects?.[idx]?.description?.message : false}
 								/>
 								<TextField
 									variant="outlined"
 									label="Role"
 									{...register(`projects[${idx}].role` as const, {required: true})}
 									error={errors ? !!errors.projects?.[idx]?.role : false}
-									helperText={errors ? !!errors.projects?.[idx]?.role.message : false}
+									helperText={errors ? !!errors.projects?.[idx]?.role?.message : false}
 								/>
 								<TextField
 									variant="outlined"
 									label="Tech Stack"
 									{...register(`projects[${idx}].techStack` as const, {required: true})}
 									error={errors ? !!errors.projects?.[idx]?.techStack : false}
-									helperText={errors ? !!errors.projects?.[idx]?.techStack.message : false}
+									helperText={errors ? !!errors.projects?.[idx]?.techStack?.message : false}
 								/>
 								<TextField
 									variant="outlined"
 									label="Language"
 									{...register(`projects[${idx}].language` as const, {required: true})}
 									error={errors ? !!errors.projects?.[idx]?.language : false}
-									helperText={errors ? !!errors.projects?.[idx]?.language.message : false}
+									helperText={errors ? !!errors.projects?.[idx]?.language?.message : false}
 								/>
 								<TextField
 									variant="outlined"
 									label="Team"
 									{...register(`projects[${idx}].team` as const, {required: true})}
 									error={errors ? !!errors.projects?.[idx]?.team : false}
-									helperText={errors ? !!errors.projects?.[idx]?.team.message : false}
+									helperText={errors ? !!errors.projects?.[idx]?.team?.message : false}
 								/>
 								<Controller
 									control={control}
