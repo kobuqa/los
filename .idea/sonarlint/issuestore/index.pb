@@ -54,7 +54,3 @@ m
 0src/pages/admin/forms/specialists-form-old-2.tsx,e/8/e8b064a5e10af51c8ffc07dcab0e04d2ad68e184
 I
 src/pages/admin/index.tsx,5/e/5ea68266cfa364f9d3d8e80411c98368048d38d8
-l
-<src/pages/admin/forms/specialist/specialist-form-stepper.tsx,7/0/70c0c3e32d9a95da20e78e83a0c6a32b21e6764b
-h
-8src/pages/admin/forms/specialist/forms/projects-form.tsx,4/5/454694b1bc32a8530c715b8eca2bc6ec36694c76
