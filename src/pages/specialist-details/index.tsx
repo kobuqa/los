@@ -7,7 +7,7 @@ const SlaveDetail = () => {
 	const navigate = useNavigate();
 	const {id} = useParams();
 	const user = useAppSelector(selectSpecialistById(+id!));
-	const handleBack = () => navigate('/specialists')
+	const handleBack = () => navigate('/specialist')
 	return (
 		<Card>
 			<Button onClick={handleBack}>Go back</Button>
