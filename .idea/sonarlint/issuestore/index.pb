@@ -1,8 +1,6 @@
 
 @
 src/app/hooks.ts,3/7/37a0a9f7cc87c73a1781aeb77a6d090700c7de94
-<
-package.json,7/0/7030d0b2f71b999ff89a343de08c414af32fc93a
 F
 src/reportWebVitals.ts,d/9/d938938695d447dadda115e28781c6541f53fc4f
 A
@@ -54,3 +52,21 @@ m
 0src/pages/admin/forms/specialists-form-old-2.tsx,e/8/e8b064a5e10af51c8ffc07dcab0e04d2ad68e184
 I
 src/pages/admin/index.tsx,5/e/5ea68266cfa364f9d3d8e80411c98368048d38d8
+<
+package.json,7/0/7030d0b2f71b999ff89a343de08c414af32fc93a
+k
+;src/pages/admin/forms/specialist/forms/cerificates-form.tsx,f/6/f6afc5585ef26fd7d2ca86ae45ab891ff8d06d1b
+J
+src/shared/api/instance.ts,f/0/f010fe604be874ba2c7536ae87b0ebd849d5d9ad
+g
+7src/pages/admin/forms/specialist/forms/general-form.tsx,c/f/cfcc3f1472bfca8b07637ed8c8f16e60617ba7ec
+Z
+*src/shared/libs/types/EnglishLevel.enum.ts,9/5/95649f15274d9fcdc3846a4852f7ac55f2991f27
+[
++src/shared/libs/types/EducationType.enum.ts,0/c/0c3379ea793ad6f163d94c39a3cc3380c017bdd9
+h
+8src/pages/admin/forms/specialist/forms/projects-form.tsx,4/5/454694b1bc32a8530c715b8eca2bc6ec36694c76
+i
+9src/pages/admin/forms/specialist/forms/education-form.tsx,1/1/112c999c70abe7554617889684ab3f74577471f2
+j
+:src/shared/api/rest/specializations/postSpecializations.ts,7/e/7ea4d66e8912a5e38b3749bd835f3aaf39cd94ea

@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { FormSubmitStatus } from "../types/form-submit-status.enum";
+import {useState} from "react";
+import {FormSubmitStatus} from "../types/form-submit-status.enum";
 
 type useFormFetchArgs = {
 	formFetchFn: Function,
@@ -11,7 +11,10 @@ export const useFormFetch = ({formFetchFn, formClearFn}: useFormFetchArgs) => {
 	const formSubmitFn = (params: any) => {
 		setFormSubmitStatus(FormSubmitStatus.Pending)
 		formFetchFn(params)
-			.then(() =>  setFormSubmitStatus(FormSubmitStatus.Success))
+			.then(() => {
+				setFormSubmitStatus(FormSubmitStatus.Success)
+				formClearFn()
+			})
 			.catch(() => setFormSubmitStatus(FormSubmitStatus.Error))
 			.finally(() => {
 				let timer: NodeJS.Timeout
@@ -19,7 +22,6 @@ export const useFormFetch = ({formFetchFn, formClearFn}: useFormFetchArgs) => {
 					setFormSubmitStatus(FormSubmitStatus.Idle)
 					clearTimeout(timer);
 				}, 2000)
-				formClearFn()
 			})
 	}
 	return {formFetchStatus: formSubmitStatus, formSubmitFn}

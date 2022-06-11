@@ -16,7 +16,7 @@ export const GeneralForm = () => {
 	const methods = useFormContext();
 	const {control, register, formState: {errors}} = methods;
 	return (
-		<Box>
+		<Box display="flex" flexDirection="column" rowGap={2}>
 			<TextField
 				fullWidth
 				label={'Specialist Name'}

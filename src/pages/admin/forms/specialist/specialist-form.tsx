@@ -2,7 +2,7 @@ import React, {useEffect} from 'react';
 import {useForm, FormProvider} from "react-hook-form";
 import SpecialistFormStepper from "./specialist-form-stepper";
 import {useFormFetch} from "../../../../shared/libs/hooks/useFormFetch";
-import {postSpecializations} from "../../../../shared/api/rest/specializations/postSpecializations";
+import {postSpecialists} from "../../../../shared/api/rest/specialists/postSpecialists";
 
 const SpecialistForm = () => {
 	const defaultValues = {
@@ -20,12 +20,27 @@ const SpecialistForm = () => {
 			team: "",
 			startDate: null,
 			endDate: null
+		}],
+		certificates: [{
+			title: "",
+			description: "",
+			url: "",
+			image: "",
+			gettingDate: null
+		}],
+		education: [{
+			organisationName: "",
+			type: "",
+			specialization: "",
+			title: "",
+			startDate: null,
+			endDate: null,
 		}]
 	};
 	const methods = useForm({ mode: "onChange", defaultValues });
 	const {watch, trigger, reset, handleSubmit} = methods;
 	const {formFetchStatus, formSubmitFn} = useFormFetch({
-		formFetchFn: postSpecializations,
+		formFetchFn: postSpecialists,
 		formClearFn: () => reset(defaultValues)
 	});
 
