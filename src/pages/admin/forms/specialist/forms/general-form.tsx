@@ -26,13 +26,6 @@ export const GeneralForm = () => {
 			/>
 			<TextField
 				fullWidth
-				label={'Profile Image URL'}
-				error={errors ? !!errors.image : false}
-				helperText={errors ? !!errors.image?.message : false}
-				{...register(`image` as const, {required: true})}
-			/>
-			<TextField
-				fullWidth
 				label={'About'}
 				error={errors ? !!errors.about : false}
 				helperText={errors ? !!errors.about?.message : false}

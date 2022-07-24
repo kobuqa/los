@@ -9,18 +9,6 @@ const SpecialistCard = ({id}: User) => {
 	const navigate = useNavigate();
 	const handleNavigate = () => navigate(`/specialist/${id}`)
 
-
-	type OFnType = (a: number) => string;
-
-	const o: OFnType = (a) => 'ALEX';
-
-	const oResultProcessor = (resultOfOCall: ReturnType<OFnType>): number => resultOfOCall.length;
-
-
-	oResultProcessor(o(2))
-
-
-
 	return (
 		<ColorizedFrame level={SpecialistLevel.Middle}>
 			<Box onClick={handleNavigate}>

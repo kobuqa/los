@@ -2,7 +2,6 @@
 
 export type User = {
 	id: number;
-	image: string;
 	name: string;
 	specializationId: number;
 	level: string;

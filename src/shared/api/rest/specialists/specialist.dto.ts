@@ -1,5 +1,4 @@
 export type SpecialistDto = {
-	image: string;
 	name: string;
 	specializationId: number;
 	level: string;

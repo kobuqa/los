@@ -7,7 +7,6 @@ import {postSpecialists} from "../../../../shared/api/rest/specialists/postSpeci
 const SpecialistForm = () => {
 	const defaultValues = {
 		name: "",
-		image: "",
 		about: "",
 		level: "",
 		skillIds: [],
@@ -51,7 +50,7 @@ const SpecialistForm = () => {
 
 	return (
 		<FormProvider {...methods}>
-			<form onSubmit={handleSubmit((data) => formSubmitFn([data]))}>
+			<form onSubmit={handleSubmit((data) => formSubmitFn(data))}>
 				<SpecialistFormStepper formStatus={formFetchStatus} trigger={trigger}/>
 			</form>
 		</FormProvider>

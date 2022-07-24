@@ -32,8 +32,6 @@ a
 :
 
 .gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
-S
-#src/pages/specialist-list/index.tsx,c/8/c81add7f1ccaac0888e6b47a28fba287aea67e56
 U
 %src/pages/admin/forms/skills-form.tsx,0/9/09150f2c6110c33d0f36d8d9134df7dff97cb44e
 X
@@ -52,8 +50,6 @@ m
 0src/pages/admin/forms/specialists-form-old-2.tsx,e/8/e8b064a5e10af51c8ffc07dcab0e04d2ad68e184
 I
 src/pages/admin/index.tsx,5/e/5ea68266cfa364f9d3d8e80411c98368048d38d8
-<
-package.json,7/0/7030d0b2f71b999ff89a343de08c414af32fc93a
 k
 ;src/pages/admin/forms/specialist/forms/cerificates-form.tsx,f/6/f6afc5585ef26fd7d2ca86ae45ab891ff8d06d1b
 J
@@ -70,3 +66,11 @@ i
 9src/pages/admin/forms/specialist/forms/education-form.tsx,1/1/112c999c70abe7554617889684ab3f74577471f2
 j
 :src/shared/api/rest/specializations/postSpecializations.ts,7/e/7ea4d66e8912a5e38b3749bd835f3aaf39cd94ea
+d
+4src/pages/admin/forms/specialist/specialist-form.tsx,3/d/3d0f3fccf0d818d4222085e15e524daf208cb402
+l
+<src/pages/admin/forms/specialist/specialist-form-stepper.tsx,7/0/70c0c3e32d9a95da20e78e83a0c6a32b21e6764b
+Y
+)src/shared/ui/components/fetch-button.tsx,a/2/a278c04d8ba1e202d4760ab8821285d193bbb04a
+<
+package.json,7/0/7030d0b2f71b999ff89a343de08c414af32fc93a

@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0253056f-806a-4f4c-a013-99558ed22899" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pages/admin/forms/specialist/forms/cerificates-form.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/admin/forms/specialist/forms/education-form.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/libs/types/EducationType.enum.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/2/521f92bfdadf75f32bc5ce3e9f4dbbd1abf687bc" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/2/521f92bfdadf75f32bc5ce3e9f4dbbd1abf687bc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/admin/forms/specialist/forms/general-form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/admin/forms/specialist/forms/general-form.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/admin/forms/specialist/specialist-form-stepper.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/admin/forms/specialist/specialist-form-stepper.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/admin/forms/specialist/specialist-form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/admin/forms/specialist/specialist-form.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/libs/hooks/useFormFetch.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/libs/hooks/useFormFetch.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/specialist-list/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/specialist-list/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +44,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/shared/api/rest/specializations" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -70,6 +65,23 @@
       <recent name="$PROJECT_DIR$/src/entities/specialist/model" />
       <recent name="$PROJECT_DIR$/src/entities" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -97,6 +109,7 @@
       <workItem from="1654518685985" duration="375000" />
       <workItem from="1654986113480" duration="2288000" />
       <workItem from="1654988422891" duration="555000" />
+      <workItem from="1658130500965" duration="4000" />
     </task>
     <servers />
   </component>

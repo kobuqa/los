@@ -35,7 +35,6 @@ const FetchAutocomplete = forwardRef<HTMLInputElement, FetchAutocompleteProps>(
 		const [value, setValue] = useState<any[] | any>(() => multiple ? [] : null);
 		const [inputValue, setInputValue] = useState('')
 
-		const loading = open && options.length === 0;
 
 		const handleAddValues = (data: any) => {
 			if(!data) return null
@@ -45,17 +44,19 @@ const FetchAutocomplete = forwardRef<HTMLInputElement, FetchAutocompleteProps>(
 		useEffect(() => {
 			let active = true;
 
-			if (!loading) return undefined;
+			if (!open) return undefined;
 
 			(async () => {
+				setIsFetching(true);
 				const response = await fetchFn()
+				setIsFetching(false);
 				if (active) setOptions(response.data);
 			})();
 
 			return () => {
 				active = false;
 			};
-		}, [loading, fetchFn]);
+		}, [open, fetchFn]);
 
 		useEffect(() => {
 			if (!open) setOptions([])
@@ -81,8 +82,9 @@ const FetchAutocomplete = forwardRef<HTMLInputElement, FetchAutocompleteProps>(
 								isOptionEqualToValue={(option, value) => option.id === value.id}
 								getOptionLabel={getOptionLabelFn}
 								options={options}
-								loading={loading}
+								loading={isFetching}
 								onChange={(_, value) => {
+									console.log('onchange')
 									if (multiple) {
 										const createdItem = value.find((item: { [key: string]: unknown }) => !item[extractedProp])
 										if (!createdItem) {
@@ -91,10 +93,10 @@ const FetchAutocomplete = forwardRef<HTMLInputElement, FetchAutocompleteProps>(
 										}
 										return createFn && (async () => {
 											setIsFetching(true);
-											const result = await createFn([{name: inputValue}])
+											const result = await createFn({name: inputValue})
 											setIsFetching(false);
-											field.onChange(handleAddValues([...value.slice(0, -1), ...result.data]));
-											setValue((prev: any) => ([...prev, ...result.data]))
+											field.onChange(handleAddValues([...value.slice(0, -1), result.data]));
+											setValue((prev: any) => ([...prev, result.data]))
 										})()
 									}
 									setValue(() => value);
@@ -119,7 +121,7 @@ const FetchAutocomplete = forwardRef<HTMLInputElement, FetchAutocompleteProps>(
 											...params.InputProps,
 											endAdornment: (
 												<>
-													{loading || isFetching ?
+													{isFetching ?
 														<CircularProgress color="inherit" size={20}/> : null}
 													{params.InputProps.endAdornment}
 												</>
