@@ -1,25 +1,29 @@
-import {Box, CardHeader, CardMedia} from "@mui/material";
-import {useNavigate} from "react-router-dom";
-import {User} from "../../../shared/libs/types/User.type";
-import ColorizedFrame from "../../../features/specialist/colorized-frame";
-import {SpecialistLevel} from "../../../shared/libs/types/SpecialistLevel.enum";
+import { Button, Card, CardActions, CardContent, CardHeader, CardMedia, Typography } from "@mui/material";
+import { useNavigate } from "react-router-dom";
+import { User } from "../../../shared/libs/types/User.type";
 
 
-const SpecialistCard = ({id}: User) => {
+const SpecialistCard = ({ card: { id, name, image, experience, specialization, availability, location } }: User) => {
 	const navigate = useNavigate();
 	const handleNavigate = () => navigate(`/specialist/${id}`)
-
 	return (
-		<ColorizedFrame level={SpecialistLevel.Middle}>
-			<Box onClick={handleNavigate}>
-				<CardHeader title={'a'}/>
-				<CardMedia
-					component="img"
-					image="https://futhead.cursecdn.com/static/img/20/players_alt/p67150100.png"
-					alt="Specialist Image"
-				/>
-			</Box>
-		</ColorizedFrame>
+		<Card>
+			<CardMedia component="img"
+				image={image}
+				alt={specialization.name}
+				sx={{ aspectRatio: '1/0.8' }}
+			/>
+			<CardHeader title={specialization.name} />
+			<CardContent>
+				<Typography>Name: {name}</Typography>
+				<Typography>Experience: {experience} year(s)</Typography>
+				<Typography>Location: {location.name}</Typography>
+				<Typography>Availability: {availability}</Typography>
+			</CardContent>
+			<CardActions>
+				<Button size="small" onClick={handleNavigate}>See More</Button>
+			</CardActions>
+		</Card>
 	);
 };
 

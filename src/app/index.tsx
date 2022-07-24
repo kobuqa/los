@@ -1,7 +1,7 @@
-import {withProviders} from "./providers";
-import {AppRouter} from "../pages";
-import {AppBar, Box, Button, Container, Toolbar} from "@mui/material";
-import {NavLink} from "react-router-dom";
+import { withProviders } from "./providers";
+import { AppRouter } from "../pages";
+import { AppBar, Box, Button, Container, Toolbar } from "@mui/material";
+import { NavLink } from "react-router-dom";
 
 const App = () => {
 
@@ -11,7 +11,7 @@ const App = () => {
 				<Toolbar>
 					<Box display="flex" columnGap={2}>
 						<Button variant="contained">
-							<NavLink to="/specialists" style={({isActive}) => ({
+							<NavLink to="/specialists" style={({ isActive }) => ({
 								color: '#fff',
 								textDecoration: 'none',
 							})}>
@@ -19,7 +19,7 @@ const App = () => {
 							</NavLink>
 						</Button>
 						<Button variant="contained">
-							<NavLink to="/admin" style={({isActive}) => ({
+							<NavLink to="/admin" style={({ isActive }) => ({
 								color: '#fff',
 								textDecoration: 'none',
 							})}>
@@ -29,8 +29,8 @@ const App = () => {
 					</Box>
 				</Toolbar>
 			</AppBar>
-			<Container sx={{paddingY: '2rem'}}>
-				<AppRouter/>
+			<Container sx={{ paddingY: '2rem' }}>
+				<AppRouter />
 			</Container>
 		</>
 	)

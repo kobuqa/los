@@ -5,7 +5,7 @@ import {
 } from "@mui/material";
 import {useFieldArray, useForm} from "react-hook-form";
 
-import {postSpecialists} from "../../../shared/api/rest/specialists/postSpecialists";
+import {postSpecialists} from "../../../shared/api/rest/specialist/postSpecialists";
 import {useFormFetch} from "../../../shared/libs/hooks/useFormFetch";
 import {EnglishLevel} from "../../../shared/libs/types/EnglishLevel.enum";
 import FetchButton from "../../../shared/ui/components/fetch-button";

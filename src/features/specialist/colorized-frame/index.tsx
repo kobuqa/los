@@ -1,4 +1,4 @@
-import React, {FC} from 'react';
+import {FC} from 'react';
 import {ColorizedCard} from "./styles";
 
 const ColorizedFrame: FC<any> = ({children, level}) => {

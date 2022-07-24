@@ -9,11 +9,11 @@ export const AppRouter = () => {
 	return (
 		<Routes>
 			<Route path="/admin" element={<AdminPage/>}/>
-			<Route path="/specialist" element={<SpecialistsPage/>}/>
-			<Route path="/specialist/:id" element={<SpecialistDetailsPage/>}/>
+			<Route path="/specialists" element={<SpecialistsPage/>}/>
+			<Route path="/specialist/:id"  element={<SpecialistDetailsPage/>}/>
 			<Route
 				path="*"
-				element={<Navigate to="/specialist" replace/>}
+				element={<Navigate to="/specialists" replace/>}
 			/>
 		</Routes>
 	);

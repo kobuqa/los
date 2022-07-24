@@ -2,10 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0253056f-806a-4f4c-a013-99558ed22899" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/2/521f92bfdadf75f32bc5ce3e9f4dbbd1abf687bc" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/2/521f92bfdadf75f32bc5ce3e9f4dbbd1abf687bc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/specialist/model/slice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/specialist/model/slice.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/specialist/ui/specialist-card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/specialist/ui/specialist-card.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/specialist/colorized-frame/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/specialist/colorized-frame/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/admin/forms/specialist/specialist-form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/admin/forms/specialist/specialist-form.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/admin/forms/specialists-form-old.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/admin/forms/specialists-form-old.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/specialist-details/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/specialist-details/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/specialist-list/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/specialist-list/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/api/rest/specialists/getSpecialists.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/api/rest/specialists/getSpecialists.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/api/rest/specialists/postSpecialists.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/api/rest/specialists/postSpecialists.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/libs/types/User.type.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/libs/types/User.type.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,6 +119,8 @@
       <workItem from="1654986113480" duration="2288000" />
       <workItem from="1654988422891" duration="555000" />
       <workItem from="1658130500965" duration="4000" />
+      <workItem from="1658647780388" duration="27000" />
+      <workItem from="1658647824956" duration="731000" />
     </task>
     <servers />
   </component>

@@ -74,7 +74,7 @@ export const specialistSlice = createSlice({
 // in the slice file. For example: `useSelector((state: RootState) => state.counter.value)`
 export const specialistsSelector = (state: RootState) => state.specialist.users;
 export const specialistsStatusSelector = (state: RootState) => state.specialist.status;
-export const specialistByIdSelector = (id: number) => createSelector([specialistsSelector], state => state.find(specialist => specialist.id === id)!)
+export const specialistByIdSelector = (id: number) => createSelector([specialistsSelector], state => state.find(specialist => specialist.card.id === id)!)
 
 // We can also write thunks by hand, which may contain both sync and async logic.
 // Here's an example of conditionally dispatching actions based on current state.
