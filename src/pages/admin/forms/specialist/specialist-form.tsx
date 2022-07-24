@@ -1,8 +1,8 @@
-import React, {useEffect} from 'react';
+import {useEffect} from 'react';
 import {useForm, FormProvider} from "react-hook-form";
 import SpecialistFormStepper from "./specialist-form-stepper";
 import {useFormFetch} from "../../../../shared/libs/hooks/useFormFetch";
-import {postSpecialists} from "../../../../shared/api/rest/specialist/postSpecialists";
+import { postSpecialists } from '../../../../shared/api/rest/specialists/postSpecialists';
 
 const SpecialistForm = () => {
 	const defaultValues = {
