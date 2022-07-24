@@ -1,11 +1,9 @@
 import {
-	Button,
 	FormControl, FormHelperText, InputLabel, MenuItem, Select,
 	TextField,
 } from "@mui/material";
 import {useFieldArray, useForm} from "react-hook-form";
 
-import {postSpecialists} from "../../../shared/api/rest/specialist/postSpecialists";
 import {useFormFetch} from "../../../shared/libs/hooks/useFormFetch";
 import {EnglishLevel} from "../../../shared/libs/types/EnglishLevel.enum";
 import FetchButton from "../../../shared/ui/components/fetch-button";
@@ -18,7 +16,7 @@ import {getSkills} from "../../../shared/api/rest/skills/getSkills";
 import {postSkills} from "../../../shared/api/rest/skills/postSkills";
 import {SpecialistLevel} from "../../../shared/libs/types/SpecialistLevel.enum";
 import {getSpecializations} from "../../../shared/api/rest/specializations/getSpecializations";
-import {SpecialistDto} from "../../../shared/api/rest/specialists/specialist.dto";
+import { postSpecialists } from "../../../shared/api/rest/specialists/postSpecialists";
 
 const SpecialistsFormOld = () => {
 	const formDefaultValue = {
